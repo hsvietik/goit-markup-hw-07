@@ -45,10 +45,32 @@
           <a class="contacts link" href="mailto:info@devstudio.com">
             info@devstudio.com</a
           >
-          <a class="contacts link" href="tel:+380961111111">
+          <a class="contacts link" href="tel:+1100011111111">
             +11 (000) 111-11-11</a
           >
         </div>
+        <button
+          class="button-menu-open menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          <!-- <svg class="icon-menu-hamburger" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg> -->
+        </button>
       </div>
     </header>
     <main>
@@ -302,7 +324,7 @@
           </p>
         </div>
         <div class="join">
-          <h3 class="join-title subtitle">Social media</h3>
+          <h3 class="join-title">Social media</h3>
           <ul class="footer-social-list list">
             <li class="team-social-item">
               <a href="" class="team-social-link link">
@@ -336,7 +358,7 @@
         </div>
         <div class="footer-form">
           <form name="subscribe-form">
-            <h3 class="join-title subtitle">Subscribe</h3>
+            <h3 class="join-title">Subscribe</h3>
             <div class="form-wrap">
               <label class="visually-hidden" for="footer-mail"></label>
               <input
@@ -357,5 +379,71 @@
         </div>
       </div>
     </footer>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button
+        class="button-modal-close menu-toggle js-close-menu"
+        type="button"
+        data-modal-close
+      >
+        <svg class="close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu-nav">
+        <ul class="mobile-nav-list list">
+          <li class="mobile-nav-list-item subtitle">
+            <a class="mobile-nav-list-link link" href="./index.html">Studio</a>
+          </li>
+          <li class="mobile-nav-list-item subtitle">
+            <a class="mobile-nav-list-link link current" href="./portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li class="mobile-nav-list-item subtitle">
+            <a class="mobile-nav-list-link link" href="">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-menu-contacts">
+        <a class="contacts-accent link" href="tel:+1100011111111">
+          +11 (000) 111-11-11</a
+        >
+        <a class="contacts-item link" href="mailto:info@devstudio.com">
+          info@devstudio.com</a
+        >
+      </div>
+      <ul class="team-social-list mobile list">
+        <li class="team-social-item">
+          <a href="" class="team-social-link link">
+            <svg class="team-social-icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="team-social-item">
+          <a href="" class="team-social-link link">
+            <svg class="team-social-icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="team-social-item">
+          <a href="" class="team-social-link link">
+            <svg class="team-social-icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="team-social-item">
+          <a href="" class="team-social-link link">
+            <svg class="team-social-icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
