@@ -56,7 +56,7 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg
+          <!-- <svg
             width="24"
             height="24"
             fill="currentColor"
@@ -68,10 +68,10 @@
               d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
               clip-rule="evenodd"
             ></path>
-          </svg>
-          <!-- <svg class="icon-menu-hamburger" width="32" height="22">
-            <use href="./images/icons.svg#icon-menu-hamburger"></use>
           </svg> -->
+          <svg class="icon-menu-hamburger" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
         </button>
       </div>
     </header>
@@ -558,69 +558,71 @@
       </section>
     </main>
     <footer class="footer section">
-      <div class="footer-container container">
-        <div class="footer-wrap">
-          <a class="logo-footer link" href="./index.html">
-            <span class="logo-accent">Web</span><span>Studio</span></a
-          >
-          <p class="footer-text">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
-        </div>
-        <div class="join">
-          <h3 class="join-title">Social media</h3>
-          <ul class="footer-social-list list">
-            <li class="team-social-item">
-              <a href="" class="team-social-link link">
-                <svg class="team-social-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a href="" class="team-social-link link">
-                <svg class="team-social-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a href="" class="team-social-link link">
-                <svg class="team-social-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a href="" class="team-social-link link">
-                <svg class="team-social-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-form">
-          <form name="subscribe-form">
-            <h3 class="join-title">Subscribe</h3>
-            <div class="form-wrap">
-              <label class="visually-hidden" for="footer-mail"></label>
-              <input
-                class="email-input"
-                type="email"
-                name="email"
-                id="footer-mail"
-                placeholder="E-mail"
-              />
-              <button class="button-submit button" type="submit">
-                Subscribe
-                <svg class="send-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </button>
-            </div>
-          </form>
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-wrap">
+            <a class="logo-footer link" href="./index.html">
+              <span class="logo-accent">Web</span><span>Studio</span></a
+            >
+            <p class="footer-text">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
+          <div class="join">
+            <h3 class="join-title">Social media</h3>
+            <ul class="footer-social-list list">
+              <li class="team-social-item">
+                <a href="" class="team-social-link link">
+                  <svg class="team-social-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a href="" class="team-social-link link">
+                  <svg class="team-social-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a href="" class="team-social-link link">
+                  <svg class="team-social-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a href="" class="team-social-link link">
+                  <svg class="team-social-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-form">
+            <form name="subscribe-form">
+              <h3 class="join-title">Subscribe</h3>
+              <div class="form-wrap">
+                <label class="visually-hidden" for="footer-mail"></label>
+                <input
+                  class="email-input"
+                  type="email"
+                  name="email"
+                  id="footer-mail"
+                  placeholder="E-mail"
+                />
+                <button class="button-submit button" type="submit">
+                  Subscribe
+                  <svg class="send-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
@@ -714,7 +716,6 @@
       <button
         class="button-modal-close menu-toggle js-close-menu"
         type="button"
-        data-modal-close
       >
         <svg class="close-icon" width="8" height="8">
           <use href="./images/icons.svg#icon-close"></use>
