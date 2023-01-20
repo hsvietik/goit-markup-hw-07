@@ -147,28 +147,88 @@
           <h2 class="about-header subheader">What are we doing</h2>
           <ul class="about-list list">
             <li class="about-list-item">
-              <img
-                src="./images/box1.jpg"
-                alt="monitor"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/about/about1_desk_1x_360.webp 1x,
+                    ./images/about/about1_desk_2x_360.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/about/about1_desk_1x_360.jpg 1x,
+                    ./images/about/about1_desk_2x_360.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="about-img"
+                  src="./images/about/about1_desk_1x_360.jpg"
+                  alt="monitor"
+                  width="360"
+                  height="300"
+                  loading="lazy"
+                />
+              </picture>
             </li>
             <li class="about-list-item">
-              <img
-                src="./images/box2.jpg"
-                alt="apps for the phone"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/about/about2_desk_1x_360.webp 1x,
+                    ./images/about/about2_desk_2x_360.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/about/about2_desk_1x_360.jpg 1x,
+                    ./images/about/about2_desk_2x_360.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="about-img"
+                  src="./images/about/about2_desk_1x_360.jpg"
+                  alt="apps for the phone"
+                  width="360"
+                  height="300"
+                  loading="lazy"
+                />
+              </picture>
             </li>
             <li class="about-list-item">
-              <img
-                src="./images/box3.jpg"
-                alt="phone in a hand"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/about/about3_desk_1x_360.webp 1x,
+                    ./images/about/about3_desk_2x_360.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/about/about3_desk_1x_360.jpg 1x,
+                    ./images/about/about3_desk_2x_360.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="about-img"
+                  src="./images/about/about3_desk_1x_360.jpg"
+                  alt="phone in a hand"
+                  width="360"
+                  height="300"
+                  loading="lazy"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -179,12 +239,31 @@
           <h2 class="team-header subheader">Our team</h2>
           <ul class="team-list list">
             <li class="team-list-item">
-              <img
-                src="./images/team/img1_mob_1x_264.jpg"
-                alt="Mark Guerrero Product Designer photo"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/img1_mob_1x_264.webp 1x,
+                    ./images/team/img1_mob_2x_264.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/img1_mob_1x_264.jpg 1x,
+                    ./images/team/img1_mob_2x_264.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="about-img"
+                  src="./images/team/img1_mob_1x_264.jpg"
+                  alt="Mark Guerrero Product Designer"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="team-caption">
                 <h3 class="team-name">Mark Guerrero</h3>
                 <p class="team-role" lang="en">Product Designer</p>
@@ -221,12 +300,30 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img
-                src="./images/frontend-developer.jpg"
-                alt="фото Ольга Рєпіна"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/img2_mob_1x_264.webp 1x,
+                    ./images/team/img2_mob_2x_264.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/img2_mob_1x_264.jpg 1x,
+                    ./images/team/img2_mob_2x_264.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="about-img"
+                  src="./images/team/img2_mob_1x_264.jpg"
+                  alt="Tom Ford Frontend Developer"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-caption">
                 <h3 class="team-name">Tom Ford</h3>
                 <p class="team-role" lang="en">Frontend Developer</p>
@@ -263,12 +360,30 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img
-                src="./images/marketing.jpg"
-                alt="фото Микола Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/img3_mob_1x_264.webp 1x,
+                    ./images/team/img3_mob_2x_264.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/img3_mob_1x_264.jpg 1x,
+                    ./images/team/img3_mob_2x_264.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="about-img"
+                  src="./images/team/img3_mob_1x_264.jpg"
+                  alt="Camila Garcia Marketing"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-caption">
                 <h3 class="team-name">Camila Garcia</h3>
                 <p class="team-role" lang="en">Marketing</p>
@@ -305,12 +420,30 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img
-                src="./images/uidesigner.jpg"
-                alt="фото Михайло Єрмаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/img4_mob_1x_264.webp 1x,
+                    ./images/team/img4_mob_2x_264.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/img4_mob_1x_264.jpg 1x,
+                    ./images/team/img4_mob_2x_264.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="about-img"
+                  src="./images/team/img4_mob_1x_264.jpg"
+                  alt="Daniel Wilson UI Designer"
+                  width="264"
+                  height="260"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-caption">
                 <h3 class="team-name">Daniel Wilson</h3>
                 <p class="team-role" lang="en">UI Designer</p>
